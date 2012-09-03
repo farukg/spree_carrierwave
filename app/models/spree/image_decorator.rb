@@ -10,7 +10,7 @@ Spree::Image.class_eval do
 
     # Match the path defined in Spree::Image
     def paperclip_path
-      "assets/products/:id/:style/:basename.:extension"
+      ":rails_root/public/spree/products/:id/:style/:basename.:extension"
     end
 
     # These are the versions defined in Spree::Image
